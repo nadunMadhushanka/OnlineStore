@@ -5,7 +5,7 @@ from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.core.database import Base
-TEST_DATABASE_URL = "postgresql+psycopg2://postgres:posql@localhost:5432/items_test"
+TEST_DATABASE_URL = "postgresql+psycopg2://postgres:posql@localhost:5432/item"
 
 engine = create_engine(TEST_DATABASE_URL)
 Base.metadata.create_all(bind=engine)
