@@ -63,4 +63,4 @@ jobs:
           # Pass environment variables for your test database or configs here
           DATABASE_URL: postgresql://postgres:password@localhost:5432/test_db
         run: |
-          pytest --cov=app tests/
+          python -m pytest --cov=app tests/
